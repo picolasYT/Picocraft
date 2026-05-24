@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Picocraft</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="game">
+  <canvas id="gameCanvas"></canvas>
+</div>
+
+<div id="hud">
+  <div id="fps">FPS: 0</div>
+  <div id="ping">Ping: 32ms</div>
+</div>
+
+<div id="clientPanel" class="hidden">
+  <div class="panel-header">Picocraft Client</div>
+
+  <div class="module">
+    <label>
+      <input type="checkbox" id="fpsToggle" checked>
+      Mostrar FPS
+    </label>
+  </div>
+
+  <div class="module">
+    <label>
+      <input type="checkbox" id="pingToggle" checked>
+      Mostrar Ping
+    </label>
+  </div>
+
+  <div class="module">
+    <h3>Skin Preview</h3>
+    <div class="skin-preview"></div>
+  </div>
+
+  <div class="module">
+    <h3>Mods</h3>
+    <button onclick="alert('Keystrokes activado')">Keystrokes</button>
+    <button onclick="alert('Zoom activado')">Zoom</button>
+    <button onclick="alert('CPS Counter activado')">CPS Counter</button>
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

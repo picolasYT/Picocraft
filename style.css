@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #0f1117;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+#gameCanvas {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(#1a1f2b, #0d1017);
+  display: block;
+}
+
+#hud {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 5;
+}
+
+#fps, #ping {
+  background: rgba(0,0,0,0.5);
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+#clientPanel {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 300px;
+  background: rgba(20,20,30,0.95);
+  border: 1px solid #4f8cff;
+  border-radius: 15px;
+  padding: 15px;
+  z-index: 10;
+  box-shadow: 0 0 20px rgba(79,140,255,0.5);
+}
+
+.hidden {
+  display: none;
+}
+
+.panel-header {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #79a8ff;
+}
+
+.module {
+  margin-bottom: 20px;
+}
+
+button {
+  background: #4f8cff;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #77a5ff;
+}
+
+.skin-preview {
+  width: 80px;
+  height: 120px;
+  background: linear-gradient(#4f8cff,#1f2f5c);
+  border-radius: 10px;
+}
